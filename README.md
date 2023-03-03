@@ -1,8 +1,20 @@
 This repository presents the 1. the results of the transformers benchmark on AMD GPU. 2. Hands-on step to run it on a HPC. 3. Appendix like readme from original fork.
 
 # 1. results of the transformers benchmark on AMD GPU.
-# 1.1 AMD Instinct MI250X
-| Pytorch version : 1.13.1+rocm5.2                         |                       |         |         |          |          |          |
+# 1.1.1 Overview
+|                                        | A100      | A6000    | V100     | 3090 Ti   | AMD MI250x |
+|----------------------------------------|-----------|----------|----------|-----------|------------|
+| Theory TF32(FP32) / FP16               | 156 / 312 | 75 / 150 | 16 / 125 | 80 / 160  |            |
+| Memory (GB) / Bandwidth (GB/s)         | 80 / 2039 | 48 / 768 | 32 / 900 | 24 / 1008 | 64/TBC     |
+| Approximate Price $                    | 16,000    | 4,000    | 3,500    | 1,500     |            |
+| Matrix Multiplication FP32 / FP16      | 116 / 230 | 60 / 95  | 14 / 95  | 42 / 81   |            |
+| Vector Multiplication                  | 0.202     | 0.082    | 0.098    | 0.107     |            |
+| Bert Layer Forward / Forward+Backward  | 110 / 136 | 60 / 70  | 53 / 64  | 56 / 62   |            |
+| GPT-2 Layer Forward / Forward+Backward | 45 / 53   | 35 / 38  | 32 / 36  | 37 / 39   | 37/42      |
+| T5 Encoder Forward / Forward+Backward  | 44 / 56   | 34 / 41  | 31 / 38  | 36 / 41   |            |
+| T5 Decoder Forward / Forward+Backward  | 38 / 47   | 28 / 34  | 26 / 32  | 30 / 36   |            |
+# 1.1.2 AMD Instinct MI250X
+|  result gpt2  Pytorch version : 1.13.1+rocm5.2                         |                       |         |         |          |          |          |
 |----------------------------------------------------------|-----------------------|---------|---------|----------|----------|----------|
 | CUDA version                                             | : None                |         |         |          |          |          |
 | GPU                                                      | : AMD Instinct MI250X |         |         |          |          |          |
