@@ -1,7 +1,7 @@
 This repository presents the 1. the results of the transformers benchmark on AMD GPU. 2. Hands-on step to run it on a HPC. 3. Appendix like readme from original fork.
 
 # 1. results of the transformers benchmark on AMD GPU.
-Code: myBenchmark_AMDGPU.py
+Code: myBenchmark_AMDGPU.py provides the AMD GPU results. The Nvidia cards results come from  https://github.com/mli/transformers-benchmarks.
 ## 1.1.1 Overview
 |                                        | A100      | A6000    | V100     | 3090 Ti   | AMD MI250x |
 |----------------------------------------|-----------|----------|----------|-----------|------------|
