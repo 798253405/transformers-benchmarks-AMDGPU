@@ -1,3 +1,14 @@
+This repository presents the 1. the results of the transformers benchmark on AMD GPU. 2. Hands-on step to run it on a HPC. 3. Appendix like readme from original fork.
+
+# 1. results of the transformers benchmark on AMD GPU.
+
+
+
+# 2. Hands-on step to run it on a HPC.
+
+
+# 3. Appendix
+************************************below is the original readme file from https://github.com/mli/transformers-benchmarks **********************************
 # Transformers Benchmarks
 
 We benchmark real [TeraFLOPS](https://en.wikipedia.org/wiki/FLOPS) that training Transformer models can achieve on various GPUs, including single GPU, multi-GPUs, and multi-machines. It helps you to estimate how many machine times you need to train your large-scale Transformer models. 
