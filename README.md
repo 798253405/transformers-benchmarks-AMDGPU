@@ -2,16 +2,18 @@ This repository presents the 1. the results of the transformers benchmark on AMD
 
 # 1. results of the transformers benchmark on AMD GPU.
 # 1.1 AMD Instinct MI250X
-Pytorch version : 1.13.1+rocm5.2
-CUDA version    : None
-GPU             : AMD Instinct MI250X
-Warning: hipconfig --rocmpath failed, assuming /opt/rocm
-                      batch=2  batch=4  batch=8  batch=16  batch=32  batch=64
-fwd seq_len=512        24.346   30.047   33.711    36.273    37.478    37.101
-fwd+bwd seq_len=512    29.239   33.928   37.970    41.511    42.780    41.853
-fwd seq_len=1024       26.463   29.082   30.773    31.664    31.401    31.159
-fwd+bwd seq_len=1024   30.484   33.417   35.838    36.770    36.120    35.580  result gpt2 
-layer bench mark done
+| Pytorch version : 1.13.1+rocm5.2                         | Targets               | P       | R        | mAP      |          |        |             |
+|----------------------------------------------------------|-----------------------|---------|----------|----------|----------|--------|-------------|
+| CUDA version                                             | : None                | 0.149   | 0.729    | 0.602    |          |        |             |
+| GPU                                                      | : AMD Instinct MI250X | 0.107   | 0.553    | 0.39     |          |        |             |
+| Warning: hipconfig --rocmpath failed, assuming /opt/rocm | 220                   | 0.209   | 0.927    | 0.895    |          |        |             |
+| batch=2                                                  | batch=4               | batch=8 | batch=16 | batch=32 | batch=64 |        |             |
+| fwd seq_len=512                                          | 24.346                | 30.047  | 33.711   | 36.273   | 37.478   | 37.101 |             |
+| fwd+bwd seq_len=512                                      | 29.239                | 33.928  | 37.970   | 41.511   | 42.780   | 41.853 |             |
+| fwd seq_len=1024                                         | 26.463                | 29.082  | 30.773   | 31.664   | 31.401   | 31.159 |             |
+| fwd+bwd seq_len=1024                                     | 30.484                | 33.417  | 35.838   | 36.770   | 36.120   | 35.580 | result gpt2 |
+| layer bench mark done                                    | 101                   | 0.136   | 0.891    | 0.73     |          |        |             |
+| Person_sitting                                           | 57                    | 0.164   | 0.772    | 0.611    |          |        |             |
 
 
 
