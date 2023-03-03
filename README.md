@@ -101,8 +101,12 @@ It seems that the codes will run on the GPU simultaneously and the performance h
 # 2. Hands-on step to run it on a HPC.
 ## 2.1 login the HPC, install conda packages, solve the enviroment issues, salloc the 
 ## 2.2 Run the code
+```bash
 wget https://github.com/798253405/transformers-benchmarks-AMDGPU/blob/main/myBenchmark_AMDGPU.py
+```
+```bash
 srun  -n  1  python3 myBenchmark_AMDGPU.py
+```
 You should be able to see the outputs like:
 ![2023-03-03_15-32](https://user-images.githubusercontent.com/7099084/222747051-c8fc66d6-59b7-4c95-8a94-8652ed8a8565.png)
 
