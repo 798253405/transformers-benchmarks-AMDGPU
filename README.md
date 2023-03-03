@@ -64,7 +64,8 @@ fwd+bwd seq_len=512   23.758   29.552   33.733  ...    37.869    38.756     38.6
 ## 1.3 Run two projects on AMD Instinct MI250X  simultaneously 
 Pytorch version : 1.13.1+rocm5.2 
 AMD Instinct MI250X
-COMMAND: ```bash
+COMMAND: 
+```bash
 srun  -n  2  python3 myBenchmark_AMDGPU.py 
 ```
 It seems that the codes will run on the GPU simultaneously and the performance halved for GPT-2.
