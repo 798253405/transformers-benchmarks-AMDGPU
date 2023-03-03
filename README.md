@@ -43,11 +43,18 @@ COMMAND: srun  -n  1  python3 newBench.py
 | fwd+bwd seq_len=512                                      | 29.239                | 33.928  | 37.970  | 41.511   | 42.780   | 41.853   |
 | fwd seq_len=1024                                         | 26.463                | 29.082  | 30.773  | 31.664   | 31.401   | 31.159   |
 | fwd+bwd seq_len=1024                                     | 30.484                | 33.417  | 35.838  | 36.770   | 36.120   | 35.580   |                  
-### 1.2.5  T5 
+### 1.2.5  T5  
+encoder
 |                     | batch=2 | batch=4 | batch=8 | ... | batch=32 | batch=64 | batch=128 |
 |---------------------|---------|---------|---------|-----|----------|----------|-----------|
 | fwd seq_len=512     | 20.944  | 28.044  | 32.714  | ... | 37.298   | 38.201   | 37.630    |
 | fwd+bwd seq_len=512 | 27.512  | 34.565  | 39.564  | ... | 44.908   | 45.397   | 45.157    |
+decoder (TODO: markdown format)
+                     batch=2  batch=4  batch=8  ...  batch=32  batch=64  batch=128
+fwd seq_len=512       17.860   23.558   27.574  ...    31.154    31.917     31.544
+fwd+bwd seq_len=512   23.758   29.552   33.733  ...    37.869    38.756     38.631
+
+[2 rows x 7 columns] t5 decoder
 
 ## 1.3 Run two projects on AMD Instinct MI250X  simultaneously 
 Pytorch version : 1.13.1+rocm5.2 
