@@ -56,6 +56,7 @@ COMMAND: srun  -n  1  python3 newBench.py
 Pytorch version : 1.13.1+rocm5.2 
 AMD Instinct MI250X
 COMMAND: srun  -n  2  python3 newBench.py 
+
 It seems that the codes will run on the GPU simultaneously and the performance halved for GPT-2.
 ### 1.3.1 Matrix Multiplication FP32 / FP16
 |               |               | n=128 | n=512  | n=2048 | n=8192  |
