@@ -2,11 +2,11 @@ This repository presents the 1. the results of the transformers benchmark on AMD
 
 # 1. results of the transformers benchmark on AMD GPU.
 # 1.1 AMD Instinct MI250X
-| Pytorch version : 1.13.1+rocm5.2                         | Targets               | P       | R        | mAP      |          |        |             |
+| Pytorch version : 1.13.1+rocm5.2                         |           |        |         |     |          |        |             |
 |----------------------------------------------------------|-----------------------|---------|----------|----------|----------|--------|-------------|
-| CUDA version                                             | : None                | 0.149   | 0.729    | 0.602    |          |        |             |
-| GPU                                                      | : AMD Instinct MI250X | 0.107   | 0.553    | 0.39     |          |        |             |
-| Warning: hipconfig --rocmpath failed, assuming /opt/rocm | 220                   | 0.209   | 0.927    | 0.895    |          |        |             |
+| CUDA version                                             | : None                |    |      |     |          |        |             |
+| GPU                                                      | : AMD Instinct MI250X |    |       |      |          |        |             |
+| Warning: hipconfig --rocmpath failed, assuming /opt/rocm | 220                   |     |    |     |          |        |             |
 | batch=2                                                  | batch=4               | batch=8 | batch=16 | batch=32 | batch=64 |        |             |
 | fwd seq_len=512                                          | 24.346                | 30.047  | 33.711   | 36.273   | 37.478   | 37.101 |             |
 | fwd+bwd seq_len=512                                      | 29.239                | 33.928  | 37.970   | 41.511   | 42.780   | 41.853 |             |
