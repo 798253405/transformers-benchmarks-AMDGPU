@@ -5,7 +5,7 @@ This repository presents the 1. the results of the transformers benchmark on AMD
 |                                        | A100      | A6000    | V100     | 3090 Ti   | AMD MI250x |
 |----------------------------------------|-----------|----------|----------|-----------|------------|
 | Theory TF32(FP32) / FP16               | 156 / 312 | 75 / 150 | 16 / 125 | 80 / 160  | ?           |
-| Memory (GB) / Bandwidth (GB/s)         | 80 / 2039 | 48 / 768 | 32 / 900 | 24 / 1008 | 64/TBC     |
+| Memory (GB) / Bandwidth (GB/s)         | 80 / 2039 | 48 / 768 | 32 / 900 | 24 / 1008 | 128/TBC     |
 | Approximate Price $                    | 16,000    | 4,000    | 3,500    | 1,500     |  ?          |
 | Matrix Multiplication FP32 / FP16      | 116 / 230 | 60 / 95  | 14 / 95  | 42 / 81   |   31/115         |
 | Vector Multiplication                  | 0.202     | 0.082    | 0.098    | 0.107     |      0.151      |
