@@ -17,7 +17,10 @@ Code: myBenchmark_AMDGPU.py
 ## 1.2 AMD Instinct MI250X
 Pytorch version : 1.13.1+rocm5.2 
 AMD Instinct MI250X
-COMMAND: srun  -n  1  python3 newBench.py 
+COMMAND: 
+```bash
+srun  -n  1  python3 myBenchmark_AMDGPU.py 
+```
 ### 1.2.1 Matrix Multiplication FP32 / FP16
 |               | n=128 | n=512  | n=2048 | n=8192  |                       |
 |---------------|-------|--------|--------|---------|-----------------------|
@@ -61,8 +64,9 @@ fwd+bwd seq_len=512   23.758   29.552   33.733  ...    37.869    38.756     38.6
 ## 1.3 Run two projects on AMD Instinct MI250X  simultaneously 
 Pytorch version : 1.13.1+rocm5.2 
 AMD Instinct MI250X
-COMMAND: srun  -n  2  python3 newBench.py 
-
+COMMAND: ```bash
+srun  -n  2  python3 myBenchmark_AMDGPU.py 
+```
 It seems that the codes will run on the GPU simultaneously and the performance halved for GPT-2.
 ### 1.3.1 Matrix Multiplication FP32 / FP16
 |               |               | n=128 | n=512  | n=2048 | n=8192  |
