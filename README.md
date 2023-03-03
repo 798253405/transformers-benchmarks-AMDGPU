@@ -1,6 +1,7 @@
 This repository presents the 1. the results of the transformers benchmark on AMD GPU. 2. Hands-on step to run it on a HPC. 3. Appendix like readme from original fork.
 
 # 1. results of the transformers benchmark on AMD GPU.
+Code: myBenchmark_AMDGPU.py
 ## 1.1.1 Overview
 |                                        | A100      | A6000    | V100     | 3090 Ti   | AMD MI250x |
 |----------------------------------------|-----------|----------|----------|-----------|------------|
@@ -98,6 +99,12 @@ It seems that the codes will run on the GPU simultaneously and the performance h
 
 
 # 2. Hands-on step to run it on a HPC.
+## 2.1 login the HPC, install conda packages, solve the enviroment issues, salloc the 
+## 2.2 Run the code
+wget https://github.com/798253405/transformers-benchmarks-AMDGPU/blob/main/myBenchmark_AMDGPU.py
+srun  -n  1  python3 myBenchmark_AMDGPU.py
+You should be able to see the outputs like:
+![2023-03-03_15-32](https://user-images.githubusercontent.com/7099084/222747051-c8fc66d6-59b7-4c95-8a94-8652ed8a8565.png)
 
 
 # 3. Appendix
