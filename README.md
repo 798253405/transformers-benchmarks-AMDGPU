@@ -8,7 +8,7 @@ The Nvidia cards results (exculde 4090) come from  https://github.com/mli/transf
 |                                        | A100      | A6000    | V100     | 3090 Ti   | AMD MI250x | 4090|
 |----------------------------------------|-----------|----------|----------|-----------|------------|------------|
 | Theory TF32(FP32) / FP16   TFLOPS             | 156 / 312 | 75 / 150 | 16 / 125 | 80 / 160  |/        | /|
-| Memory (GB) / Bandwidth (GB/s)         | 80 / 2039 | 48 / 768 | 32 / 900 | 24 / 1008 | 128?64?/TBC     |  24 / 1008|
+| Memory (GB) / Bandwidth (GB/s)         | 80 / 2039 | 48 / 768 | 32 / 900 | 24 / 1008 |  Single GCD 64/1600     |  24 / 1008|
 | Approximate Price $                    | 16,000    | 4,000    | 3,500    | 1,500     |  /         | 1,599|
 | Matrix Multiplication FP32 / FP16  TFLOPS	    | 116 / 230 | 60 / 95  | 14 / 95  | 42 / 81   |   31/115         |56 / 164|
 | Vector Multiplication   TFLOPS   (limited by bandwidth)            | 0.202     | 0.082    | 0.098    | 0.107     |      0.151      |0.481|
