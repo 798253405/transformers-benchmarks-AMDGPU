@@ -10,12 +10,12 @@ The Nvidia cards results (exculde 4090) come from  https://github.com/mli/transf
 | Theory TF32(FP32) / FP16               | 156 / 312 | 75 / 150 | 16 / 125 | 80 / 160  |/        | /|
 | Memory (GB) / Bandwidth (GB/s)         | 80 / 2039 | 48 / 768 | 32 / 900 | 24 / 1008 | 128?64?/TBC     |  24 / 1008|
 | Approximate Price $                    | 16,000    | 4,000    | 3,500    | 1,500     |  /         | 1,599|
-| Matrix Multiplication FP32 / FP16      | 116 / 230 | 60 / 95  | 14 / 95  | 42 / 81   |   31/115         |56 / 164|
-| Vector Multiplication                  | 0.202     | 0.082    | 0.098    | 0.107     |      0.151      |0.481|
-| Bert Layer Forward / Forward+Backward  | 110 / 136 | 60 / 70  | 53 / 64  | 56 / 62   |       52/63     |97 / 101|
-| GPT-2 Layer Forward / Forward+Backward | 45 / 53   | 35 / 38  | 32 / 36  | 37 / 39   | 37/42      |48 / 54|
-| T5 Encoder Forward / Forward+Backward  | 44 / 56   | 34 / 41  | 31 / 38  | 36 / 41   |    38/45        |50 / 55|
-| T5 Decoder Forward / Forward+Backward  | 38 / 47   | 28 / 34  | 26 / 32  | 30 / 36   |  32/39          |40 / 46|
+| Matrix Multiplication FP32 / FP16  TFLOPS	    | 116 / 230 | 60 / 95  | 14 / 95  | 42 / 81   |   31/115         |56 / 164|
+| Vector Multiplication   TFLOPS               | 0.202     | 0.082    | 0.098    | 0.107     |      0.151      |0.481|
+| Bert Layer Forward / Forward+Backward TFLOPS  | 110 / 136 | 60 / 70  | 53 / 64  | 56 / 62   |       52/63     |97 / 101|
+| GPT-2 Layer Forward / Forward+Backward  TFLOPS| 45 / 53   | 35 / 38  | 32 / 36  | 37 / 39   | 37/42      |48 / 54|
+| T5 Encoder Forward / Forward+Backward TFLOPS | 44 / 56   | 34 / 41  | 31 / 38  | 36 / 41   |    38/45        |50 / 55|
+| T5 Decoder Forward / Forward+Backward  TFLOPS | 38 / 47   | 28 / 34  | 26 / 32  | 30 / 36   |  32/39          |40 / 46|
 ## 1.2 AMD Instinct MI250X
 Pytorch version : 1.13.1+rocm5.2 
 AMD Instinct MI250X
