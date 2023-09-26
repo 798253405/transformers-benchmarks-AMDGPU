@@ -3,7 +3,7 @@ This repository presents the 1. the results of the transformers benchmark on AMD
 # 1. results of the transformers benchmark on AMD GPU.
 Code: [myBenchmark_AMDGPU.py](https://github.com/798253405/transformers-benchmarks-AMDGPU/blob/main/myBenchmark_AMDGPU.py) provides the AMD GPU results. 
 
-The Nvidia cards results (exculde 4090) come from  https://github.com/mli/transformers-benchmarks. The results of 4090 comes from https://github.com/aisensiy/transformers-benchmarks (not checked, so to believe it or not to is up to you).
+The Nvidia cards results (exculde 4090) come from  https://github.com/mli/transformers-benchmarks. The results of 4090 comes from https://github.com/aisensiy/transformers-benchmarks (not checked).
 ## 1.1.1 Overview
 |                                        | A100      | A6000    | V100     | 3090 Ti   | AMD MI250x | 4090|
 |----------------------------------------|-----------|----------|----------|-----------|------------|------------|
